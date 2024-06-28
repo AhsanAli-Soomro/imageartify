@@ -25,7 +25,7 @@ const MobileNav = () => {
                     width={50}
                     height={28}
                 />
-                <p className="font-bold text-xl pb-2">IMAGEARTIFY</p>
+                <p className="logo-text font-bold text-xl pb-2">IMAGEARTIFY</p>
             </Link>
             <nav>
                 <SignedIn>
@@ -48,7 +48,7 @@ const MobileNav = () => {
                                         width={50}
                                         height={28}
                                     />
-                                    <p className="font-bold text-xl pb-2">IMAGEARTIFY</p>
+                                    <p className="logo-text font-bold text-xl pb-2">IMAGEARTIFY</p>
                                 </div>
                                 <ul className="sidebar-nav-elements">
                                     {navLinks.map((link) => {
@@ -74,7 +74,7 @@ const MobileNav = () => {
 
                 </SignedIn>
                 <SignedOut>
-                    <Button asChild className='button bg-purple-gradient bg-cover'>
+                    <Button asChild className='button bg-green-gradient bg-cover'>
                         <Link href="/sign-in">Login</Link>
                     </Button>
                 </SignedOut>
