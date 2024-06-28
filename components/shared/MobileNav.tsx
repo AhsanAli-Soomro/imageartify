@@ -42,19 +42,19 @@ const MobileNav = () => {
                         </SheetTrigger>
                         <SheetContent className='sheet-content sm:w-64'>
                             <>
-                                <div className="flex-center">
+                                <div className="flex">
                                     <Image src="/assets/images/logo-icon.svg"
                                         alt="logo"
                                         width={50}
                                         height={28}
                                     />
-                                    <p className="logo-text font-bold text-xl pb-2">IMAGEARTIFY</p>
+                                    <p className="logo-text font-bold text-xl pt-2">IMAGEARTIFY</p>
                                 </div>
                                 <ul className="sidebar-nav-elements">
                                     {navLinks.map((link) => {
                                         const isActive = link.route === pathname
                                         return (
-                                            <li key={link.route} className={`${isActive && 'gradient-text'} p-18 flex whitespace-nowrap text-dark-700`}>
+                                            <li key={link.route} className={`${isActive && 'gradient-text'} p-18 flex whitespace-nowrap text-dark-500`}>
                                                 <Link className="sidebar-link cursor-pointer" href={link.route}>
                                                     <Image
                                                         src={link.icon}
